@@ -17,30 +17,31 @@ const absSort = (arr) => {
     return arr
 }
 
-absSort(arr)
+// absSort(arr)
 
 
-const absSort2 = (arr) => {
-    const findMin = (a, b) => {
-      if (Math.abs(a) < Math.abs(b)){
-        return true
-         } else if (Math.abs(a) > Math.abs(b)){
-           return false} else {
-          return a < b 
-         }
-      };
-      for (let i = 0; i < arr.length - 2; i++){
-          let smallest = i
-          for (let j = i; j < arr.length - 1; j++){
-              if (findMin(arr[j], arr[smallest])){
-                  smallest = j } else {
-                    arr[smallest], arr[i] = arr[i], arr[smallest]
-                  }
-          }
-      }
-    console.log(arr)
-    return arr
-};
+// const absSort2 = (arr) => {
+//     // debugger
+//     const findMin = (a, b) => {
+//       if (Math.abs(a) < Math.abs(b)){
+//         return true
+//          } else if (Math.abs(a) > Math.abs(b)){
+//            return false} else {
+//           return a < b 
+//          }
+//       };
+//       for (let i = 0; i < arr.length - 2; i++){
+//           let smallestIndex = i
+//           for (let j = i; j < arr.length - 1; j++){
+//               if (findMin(arr[j], arr[smallestIndex])){
+//                   smallestIndex = j } else {
+//                     arr[smallest], arr[i] = arr[i], arr[smallest]
+//                   }
+//           }
+//       }
+//     console.log(arr)
+//     return arr
+// };
       
 
 
